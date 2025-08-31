@@ -1,0 +1,52 @@
+{
+  "contracts": {
+    "FungibleToken": {
+      "aliases": {
+        "testnet": "0x9a0766d93b6608b7"
+      }
+    },
+    "FlowToken": {
+      "aliases": {
+        "testnet": "0x7e60df042a9c0868"
+      }
+    },
+    "EduChainScholarship": {
+      "source": "./scholar-chain-hub-main/test/cadence/contracts/EduChainScholarship.cdc",
+      "aliases": {
+        "testnet": "0x407130ccc8c82b01"
+      }
+    }
+  },
+  "networks": {
+    "emulator": "127.0.0.1:3569",
+    "testnet": "access.devnet.nodes.onflow.org:9000",
+    "mainnet": "access.mainnet.nodes.onflow.org:9000"
+  },
+  "accounts": {
+    "emulator-account": {
+      "address": "0xf8d6e0586b0a20c7",
+      "key": {
+        "type": "file",
+        "location": "emulator-account.pkey"
+      }
+    },
+    "testnet-account": {
+      "address": "0x407130ccc8c82b01",
+      "key": {
+        "type": "hex",
+        "index": 0,
+        "signatureAlgorithm": "ECDSA_secp256k1",
+        "hashAlgorithm": "SHA2_256",
+        "privateKey": "4af14d2d050fa21e59dadb1c663d41ba88db8b30c9639d4b9c69f32608db9f80"
+      }
+    }
+  },
+  "deployments": {
+    "emulator": {
+      "emulator-account": ["EduChainScholarship"]
+    },
+    "testnet": {
+      "testnet-account": ["EduChainScholarship"]
+    }
+  }
+}

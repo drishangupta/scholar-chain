@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flow cadence parse:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
